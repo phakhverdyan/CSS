@@ -1,0 +1,97 @@
+.gradient-linear{
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(to right, blue, red, green);
+}
+.gradient-linear2{
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(rgb(39, 178, 202), rgb(204, 19, 221) ,rgb(233, 230, 39));
+}
+.radial-gradient{
+    width: 400px;
+    height: 200px;
+    background-image: radial-gradient(red, green, blue);
+}
+.radial-gradient2{
+    width: 400px;
+    height: 200px;
+    background-image: repeating-radial-gradient(rgb(42, 238, 212), rgb(99, 196, 34) 10%, rgb(204, 27, 180) 15%);
+}
+.conic-gradient{
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(rgba(47, 228, 167, 0.733), rgb(47, 204, 47), rgb(42, 75, 184), rgb(118, 41, 170), black);
+    border-radius: 50%;
+}
+.conic-gradient2{
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+    border-radius: 50%;
+}
+.text1{
+    text-overflow: clip; 
+    border: 1px solid black;
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+}
+.text2{
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+}
+.text3{
+    width: 100px;
+    height:120px;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+.text4{
+    width: 100px;
+    height:120px;
+    word-wrap: normal;
+    border: 1px solid black;
+}
+.line2::before{
+    content: "\a";
+    white-space: pre;
+}
+.line1::after{
+    content: "\a";
+    white-space: pre;
+}
+.example.Text1 span, .example.Text1 {
+    writing-mode: horizontal-tb;
+ }
+  
+  .example.Text2 span, .example.Text2 {
+    writing-mode: vertical-lr;
+  }
+  
+  .example.Text3 span, .example.Text3 {
+    writing-mode: vertical-rl;
+  }
+  
+  .example.Text4 span, .example.Text4 {
+    writing-mode: sideways-lr;
+  }
+  
+  .example.Text5 span, .example.Text5 {
+    writing-mode: sideways-rl;
+  }
+  .img1{
+      filter: grayscale(100%);
+  }
+  .img2{
+      filter: blur(4px);
+  }
+  .img3{
+      filter: contrast(4);
+  }
+  .img4{
+      filter: invert();
+  }
