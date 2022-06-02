@@ -1,0 +1,22 @@
+.sidebar {
+  width: 100px;
+  margin: 0 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */

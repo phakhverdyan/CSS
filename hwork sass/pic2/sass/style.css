@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body nav {
+  width: 10%;
+  min-width: 200px;
+  background-color: #968e8e;
+  color: #f0ebeb;
+}
+
+body nav ul {
+  padding-left: 20px;
+  line-height: 25px;
+}
+
+body nav ul li {
+  list-style: none;
+}
+
+body main {
+  padding-left: 20px;
+  line-height: 25px;
+  width: 90%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+header, ul {display: flex;}
+.wrapper{
+    height: 100px;
+    border: 1px solid black;
+    justify-content: space-between;
+    }
+.list{
+    list-style: none;
+}

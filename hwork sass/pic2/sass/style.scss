@@ -1,0 +1,26 @@
+@mixin navpadding {
+    padding-left: 20px;
+    line-height: 25px;
+}
+body {
+    margin: 0;
+    display: flex;
+    nav{
+        width: 10%;
+        min-width: 200px;
+        background-color: rgb(150, 142, 142);
+        color: rgb(240, 235, 235);
+        ul{
+            @include navpadding;
+            li{
+                list-style: none;
+            }
+        }   
+    }
+
+    main{
+        @include navpadding();
+        width: 90%;
+    }
+}
+  
