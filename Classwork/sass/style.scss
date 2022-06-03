@@ -1,0 +1,160 @@
+$ubuntu: "Ubuntu", sans-serif;
+$white: #fff;
+$switch-bg:#020f47; 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $ubuntu;
+    padding: 40px;
+}
+.pricing-table-container{
+    .pricing-header{
+        @include flexCenter;
+
+        .h2{
+            margin-right: 10px;
+        }
+        .plans-switch-container{
+            position: relative;
+            color: white;
+            display: inline-block;
+            .plans-switch{
+                width: 250px;
+                background-color: $switch-bg;
+                height: 55px;
+                appearance: none;
+                border-radius: 24px;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 44px;
+                    width: 120px;
+                    border-radius: 24px;
+                    background: greenyellow;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 6px;
+                    transition: all 0.5s;
+
+                }
+            }
+            .monthly{
+                @include durationsPositions;
+                left: 36px;
+                
+            }
+            .yearly{
+                @include durationsPositions;
+                right: 36px;  
+            }
+        }
+    }
+    .pricing-table{
+        @include flexCenter;
+        margin-top:32px;
+        .table{
+            background: #ef476f1f;
+            width: 260px;
+            padding: 32px;
+            position: relative;
+            background-image: url(../images/bg-shape1.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            
+            &.best-value{
+                background-color: #2b336d;
+                color: whitesmoke;
+                background-image: url(../images/bg-shape2.svg);
+                padding-top: 70px;
+                border-radius: 25px;
+                overflow: hidden;
+                .value{
+                    background-color: #ac246e;
+                    color: #fff;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 20px;
+                    
+
+                }
+                .btn{
+                    background:#ffd166;
+                    color: #222;
+
+                    &:hover{
+                        background: #f0b11c;
+                    }
+                }
+            }
+
+            .content{
+                .price-container{
+                    @include flexCenter;
+                    margin-bottom: 20px;
+                }
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                .price{
+                    font-size: 50px;
+                    font-weight: bold;
+                    padding-right: 16px;
+                }
+                .description{
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+                .features{
+                    list-style-type: none;
+                    padding: 0;
+                    li{
+                        margin: 4px 0;
+                       @include flexCenter;
+                    }
+                    li::before{
+                        content: url(/Classwork/images/check-icon.svg);
+                        margin-left:16px;
+                        margin-top: 4px;
+                        padding-right: 8px;
+
+                    }
+                }
+            }
+        }
+        .btn{
+            background-color: #023047;
+            padding: 16px 0;
+            display: inline-block;
+            width: 100%;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 24px;
+            margin-top: 16px;
+            transition: all 400ms;
+            &:hover{
+                background: #29769c;
+            }
+        }
+
+    }
+}

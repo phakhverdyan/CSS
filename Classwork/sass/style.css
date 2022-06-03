@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 40px;
+}
+
+.pricing-table-container .pricing-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-table-container .pricing-header .h2 {
+  margin-right: 10px;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .plans-switch {
+  width: 250px;
+  background-color: #020f47;
+  height: 55px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .plans-switch::before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 120px;
+  border-radius: 24px;
+  background: greenyellow;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 6px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .monthly {
+  position: absolute;
+  left: 36px;
+  top: 18px;
+  pointer-events: none;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .yearly {
+  position: absolute;
+  right: 36px;
+  top: 18px;
+  pointer-events: none;
+}
+
+.pricing-table-container .pricing-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+.pricing-table-container .pricing-table .table {
+  background: #ef476f1f;
+  width: 260px;
+  padding: 32px;
+  position: relative;
+  background-image: url(../images/bg-shape1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.pricing-table-container .pricing-table .table.best-value {
+  background-color: #2b336d;
+  color: whitesmoke;
+  background-image: url(../images/bg-shape2.svg);
+  padding-top: 70px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.pricing-table-container .pricing-table .table.best-value .value {
+  background-color: #ac246e;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.pricing-table-container .pricing-table .table.best-value .btn {
+  background: #ffd166;
+  color: #222;
+}
+
+.pricing-table-container .pricing-table .table.best-value .btn:hover {
+  background: #f0b11c;
+}
+
+.pricing-table-container .pricing-table .table .content .price-container {
+  @inc margin-bottom: 20px;
+}
+
+.pricing-table-container .pricing-table .table .content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pricing-table-container .pricing-table .table .content .price {
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 16px;
+}
+
+.pricing-table-container .pricing-table .table .content .description {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.pricing-table-container .pricing-table .table .content .features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-table-container .pricing-table .table .content .features li {
+  margin: 4px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-table-container .pricing-table .table .content .features li::before {
+  content: url(/Classwork/images/check-icon.svg);
+  margin-left: 16px;
+  margin-top: 4px;
+  padding-right: 8px;
+}
+
+.pricing-table-container .pricing-table .btn {
+  background-color: #023047;
+  padding: 16px 0;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px;
+  margin-top: 16px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.pricing-table-container .pricing-table .btn:hover {
+  background: #29769c;
+}
+/*# sourceMappingURL=style.css.map */
